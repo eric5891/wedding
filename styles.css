@@ -314,10 +314,10 @@ a { color: inherit; }
   position: relative;
   padding-top: 0;
   background-image: url('images/hero-bg.png');
-  background-size: contain;
-  background-position: center top;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-color: #e8dfe8;
+  min-height: 140vh;
 }
 
 .hero-overlay-text {
