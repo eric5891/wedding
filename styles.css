@@ -314,9 +314,10 @@ a { color: inherit; }
   position: relative;
   padding-top: 0;
   background-image: url('images/hero-bg.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
+  background-color: #e8dfe8;
 }
 
 .hero-overlay-text {
@@ -332,10 +333,10 @@ a { color: inherit; }
   margin-top: 50px;
   /* Subtle semi-transparent overlay for text readability */
   background: radial-gradient(
-    ellipse at center 40%,
-    rgba(250, 248, 244, 0.55) 0%,
-    rgba(250, 248, 244, 0.3) 50%,
-    transparent 80%
+    ellipse at center 45%,
+    rgba(245, 238, 232, 0.6) 0%,
+    rgba(245, 238, 232, 0.35) 45%,
+    transparent 75%
   );
 }
 
