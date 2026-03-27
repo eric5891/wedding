@@ -1,57 +1,43 @@
 /* ============================================
    Polina & Eric Wedding
-   Italian Riviera Poster Art Design
+   Romantic Watercolor Wedding Design
    ============================================ */
 
 :root {
-  /* Azure & Sea */
-  --azure: #2e86ab;
-  --azure-deep: #1a5f7a;
-  --azure-light: #5ba4c4;
-  --azure-sky: #87ceeb;
-  --azure-pale: #d4eef8;
-  --sea-light: #a8d8ea;
+  /* Dusty Blue — primary text & headings */
+  --blue: #5a6d8a;
+  --blue-dark: #3d4f6a;
+  --blue-light: #7a8da8;
+  --blue-pale: #c8d4e4;
 
-  /* Lemon & Sun */
-  --lemon: #f4d03f;
-  --lemon-bright: #ffe135;
-  --lemon-pale: #fef9e7;
-  --lemon-dark: #c9a800;
-  --sun-warm: #f5c842;
+  /* Warm Greens — foliage, accents */
+  --sage: #8a9e78;
+  --sage-light: #a8b898;
+  --sage-muted: #b8c8a8;
+  --olive: #6a7a55;
+  --olive-dark: #4a5a3a;
 
-  /* Terracotta & Coral */
-  --terracotta: #c0583a;
-  --terracotta-dark: #9e4530;
-  --terracotta-light: #d4795e;
-  --coral: #e87461;
-  --coral-light: #f0a090;
+  /* Warm Stone — pillars, borders */
+  --stone: #c4a882;
+  --stone-light: #d8c4a8;
+  --stone-pale: #e8dcc8;
 
-  /* Greens */
-  --olive: #5a7247;
-  --olive-light: #7a9a60;
-  --sage: #8aaa78;
-  --leaf-green: #4a8c3f;
+  /* Lavender */
+  --lavender: #9888a8;
+  --lavender-light: #c8b8d4;
+  --lavender-pale: #e8ddf0;
 
-  /* Pink & Blush */
-  --pink: #e8889c;
-  --pink-light: #f4b8c4;
-  --blush: #fce4ec;
-
-  /* Navy */
-  --navy: #1e3a5f;
-  --navy-light: #2c5282;
-
-  /* Neutrals */
+  /* Warm neutrals */
   --white: #ffffff;
-  --cream: #fdf8f0;
-  --sand: #f5ead6;
-  --warm-white: #fefcf8;
-  --dark: #2d2926;
+  --cream: #faf8f4;
+  --warm-cream: #f5f0e8;
+  --ivory: #f8f5ef;
+  --dark: #3a3832;
 
   /* Fonts */
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-script: 'Dancing Script', cursive;
-  --font-body: 'Libre Baskerville', Georgia, serif;
+  --font-script: 'Pinyon Script', cursive;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-serif-sc: 'Cormorant SC', Georgia, serif;
   --font-sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -65,9 +51,9 @@
 html { font-size: 16px; }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-serif);
   font-weight: 400;
-  color: var(--dark);
+  color: var(--blue);
   background-color: var(--cream);
   line-height: 1.7;
   overflow-x: hidden;
@@ -78,33 +64,7 @@ a { color: inherit; }
 .hidden { display: none !important; }
 
 /* ============================================
-   MAJOLICA TILE PATTERN (CSS Background)
-   ============================================ */
-.tile-bg {
-  background-color: var(--azure-pale);
-  background-image:
-    radial-gradient(circle at 50% 50%, transparent 30%, rgba(46, 134, 171, 0.06) 30%, rgba(46, 134, 171, 0.06) 32%, transparent 32%),
-    radial-gradient(circle at 0% 0%, transparent 30%, rgba(46, 134, 171, 0.06) 30%, rgba(46, 134, 171, 0.06) 32%, transparent 32%),
-    radial-gradient(circle at 100% 0%, transparent 30%, rgba(46, 134, 171, 0.06) 30%, rgba(46, 134, 171, 0.06) 32%, transparent 32%),
-    radial-gradient(circle at 0% 100%, transparent 30%, rgba(46, 134, 171, 0.06) 30%, rgba(46, 134, 171, 0.06) 32%, transparent 32%),
-    radial-gradient(circle at 100% 100%, transparent 30%, rgba(46, 134, 171, 0.06) 30%, rgba(46, 134, 171, 0.06) 32%, transparent 32%);
-  background-size: 60px 60px;
-}
-
-/* Alternate tile: lemon */
-.tile-bg-lemon {
-  background-color: var(--lemon-pale);
-  background-image:
-    radial-gradient(circle at 50% 50%, transparent 28%, rgba(244, 208, 63, 0.1) 28%, rgba(244, 208, 63, 0.1) 30%, transparent 30%),
-    radial-gradient(circle at 0% 0%, transparent 28%, rgba(244, 208, 63, 0.1) 28%, rgba(244, 208, 63, 0.1) 30%, transparent 30%),
-    radial-gradient(circle at 100% 0%, transparent 28%, rgba(244, 208, 63, 0.1) 28%, rgba(244, 208, 63, 0.1) 30%, transparent 30%),
-    radial-gradient(circle at 0% 100%, transparent 28%, rgba(244, 208, 63, 0.1) 28%, rgba(244, 208, 63, 0.1) 30%, transparent 30%),
-    radial-gradient(circle at 100% 100%, transparent 28%, rgba(244, 208, 63, 0.1) 28%, rgba(244, 208, 63, 0.1) 30%, transparent 30%);
-  background-size: 60px 60px;
-}
-
-/* ============================================
-   NAVIGATION
+   NAVIGATION — Soft, understated
    ============================================ */
 .site-nav {
   position: fixed;
@@ -115,29 +75,30 @@ a { color: inherit; }
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--navy);
-  border-bottom: 3px solid var(--lemon);
+  background: rgba(250, 248, 244, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--blue-pale);
 }
 
 .nav-link {
-  padding: 14px 18px;
+  padding: 14px 20px;
   font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 600;
+  font-size: 0.65rem;
+  font-weight: 500;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--white);
+  color: var(--blue-light);
   transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--blue-dark);
 }
 
 .nav-link.active {
-  background: var(--terracotta);
-  color: var(--white);
+  color: var(--blue-dark);
+  border-bottom: 2px solid var(--blue);
 }
 
 /* ============================================
@@ -145,7 +106,7 @@ a { color: inherit; }
    ============================================ */
 .page {
   min-height: 100vh;
-  padding-top: 52px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -156,206 +117,125 @@ a { color: inherit; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 /* ============================================
-   POSTER CARD — Main content container
+   CONTENT CARD — Soft, elegant container
    ============================================ */
-.poster-card {
+.content-card {
   background: var(--white);
-  border: 3px solid var(--navy);
-  border-radius: 12px;
-  max-width: 680px;
+  max-width: 640px;
   width: 100%;
-  padding: 50px 48px;
-  position: relative;
+  padding: 60px 50px;
   text-align: center;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* Decorative inner border */
-.poster-card::before {
-  content: '';
-  position: absolute;
-  inset: 8px;
-  border: 1.5px solid var(--azure-light);
-  border-radius: 8px;
-  pointer-events: none;
-}
-
-/* ---- Stamp-style card variant ---- */
-.stamp-card {
-  background: var(--white);
-  border-radius: 4px;
-  max-width: 680px;
-  width: 100%;
-  padding: 50px 48px;
   position: relative;
-  text-align: center;
-  /* Scalloped edge via radial gradient background on wrapper */
+  border: 1px solid var(--blue-pale);
 }
 
-.stamp-card-wrap {
-  background: var(--terracotta);
-  padding: 8px;
-  border-radius: 4px;
-  max-width: 696px;
-  width: 100%;
-  /* Scalloped edge effect */
-  background-image: radial-gradient(circle, var(--cream) 5px, transparent 5px);
-  background-size: 20px 20px;
-  background-position: -10px -10px;
-}
-
-/* ============================================
-   CSS LEMON DECORATION
-   ============================================ */
-.lemon-decor {
-  position: absolute;
-  width: 40px;
-  height: 52px;
-}
-
-.lemon-fruit {
-  width: 36px;
-  height: 46px;
-  background: var(--lemon);
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  position: relative;
-  border: 2px solid var(--lemon-dark);
-}
-
-.lemon-fruit::after {
+/* Subtle corner ornaments */
+.content-card::before,
+.content-card::after {
   content: '';
   position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-15deg);
-  width: 16px;
-  height: 14px;
-  background: var(--olive-light);
-  border-radius: 50% 50% 10% 10%;
-  border: 1.5px solid var(--olive);
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--sage-muted);
+  opacity: 0.5;
 }
 
-/* Second leaf */
-.lemon-fruit::before {
+.content-card::before {
+  top: 12px;
+  left: 12px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.content-card::after {
+  top: 12px;
+  right: 12px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.card-corners-bottom::before,
+.card-corners-bottom::after {
   content: '';
   position: absolute;
-  top: -10px;
-  left: 60%;
-  transform: rotate(20deg);
-  width: 14px;
-  height: 12px;
-  background: var(--sage);
-  border-radius: 50% 50% 10% 10%;
-  border: 1.5px solid var(--olive);
-  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--sage-muted);
+  opacity: 0.5;
 }
 
-.lemon-decor.top-left { top: 16px; left: 16px; transform: rotate(-15deg); }
-.lemon-decor.top-right { top: 16px; right: 16px; transform: rotate(15deg); }
-.lemon-decor.bottom-left { bottom: 16px; left: 16px; transform: rotate(15deg) scaleY(-1); }
-.lemon-decor.bottom-right { bottom: 16px; right: 16px; transform: rotate(-15deg) scaleY(-1); }
-
-/* ============================================
-   CSS BOUGAINVILLEA / FLOWER CLUSTERS
-   ============================================ */
-.flower-cluster {
-  position: absolute;
-  display: flex;
-  gap: 3px;
-  flex-wrap: wrap;
-  width: 35px;
+.card-corners-bottom::before {
+  bottom: 12px;
+  left: 12px;
+  border-right: none;
+  border-top: none;
 }
 
-.petal {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  opacity: 0.8;
+.card-corners-bottom::after {
+  bottom: 12px;
+  right: 12px;
+  border-left: none;
+  border-top: none;
 }
-
-.petal-pink { background: var(--pink); }
-.petal-coral { background: var(--coral-light); }
-.petal-rose { background: var(--pink-light); }
-
-.flower-cluster.top-left { top: 20px; left: 55px; }
-.flower-cluster.top-right { top: 20px; right: 55px; }
-.flower-cluster.bottom-left { bottom: 20px; left: 55px; }
-.flower-cluster.bottom-right { bottom: 20px; right: 55px; }
 
 /* ============================================
    TYPOGRAPHY
    ============================================ */
-.display-title {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2.8rem, 7vw, 5rem);
-  color: var(--navy);
-  line-height: 1.05;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.display-title-accent {
-  color: var(--terracotta);
-}
-
 .script-title {
   font-family: var(--font-script);
-  font-weight: 700;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  color: var(--terracotta);
-  line-height: 1.2;
-  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: clamp(3rem, 7vw, 5rem);
+  color: var(--blue);
+  line-height: 1.15;
+  margin-bottom: 12px;
 }
 
-.section-heading {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--navy);
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.script-heading {
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  color: var(--blue);
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 
-.sub-heading {
+.section-label {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--azure-deep);
-  margin-bottom: 8px;
-}
-
-.script-accent {
-  font-family: var(--font-script);
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 700;
-  color: var(--terracotta);
-  margin-bottom: 12px;
+  color: var(--blue-light);
+  margin-bottom: 6px;
 }
 
 .couple-name {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
+  font-family: var(--font-serif-sc);
+  font-size: 0.88rem;
+  font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--blue-dark);
   line-height: 2;
 }
 
+.italic-and {
+  font-family: var(--font-script);
+  font-size: 1.6rem;
+  color: var(--blue-light);
+  line-height: 1;
+  margin: 2px 0;
+}
+
 .body-text {
-  font-family: var(--font-body);
+  font-family: var(--font-serif);
   font-size: 0.92rem;
-  color: var(--dark);
-  line-height: 1.95;
+  color: var(--blue);
+  line-height: 2;
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
@@ -363,31 +243,33 @@ a { color: inherit; }
 
 .detail-label {
   font-family: var(--font-sans);
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 0.68rem;
+  font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--terracotta);
-  margin-top: 16px;
+  color: var(--blue-dark);
+  margin-top: 18px;
   margin-bottom: 2px;
 }
 
 .detail-value {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--dark);
+  font-family: var(--font-serif);
+  font-size: 0.92rem;
+  color: var(--blue);
 }
 
 .italic-note {
-  font-family: var(--font-body);
+  font-family: var(--font-serif);
   font-size: 0.85rem;
   font-style: italic;
-  color: var(--terracotta-light);
-  line-height: 1.8;
+  color: var(--blue-light);
+  line-height: 1.9;
+  max-width: 460px;
+  margin: 0 auto;
 }
 
 /* ============================================
-   DIVIDERS
+   DIVIDERS — Delicate botanical
    ============================================ */
 .divider {
   display: flex;
@@ -395,49 +277,38 @@ a { color: inherit; }
   justify-content: center;
   gap: 14px;
   margin: 28px auto;
-  width: 180px;
+  width: 120px;
 }
 
 .divider-line {
   flex: 1;
-  height: 2px;
-  background: var(--lemon);
-  border-radius: 1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--sage-muted));
 }
 
-.divider-lemon {
-  width: 18px;
-  height: 22px;
-  background: var(--lemon);
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  border: 1.5px solid var(--lemon-dark);
+.divider-line:last-child {
+  background: linear-gradient(90deg, var(--sage-muted), transparent);
+}
+
+.divider-leaf {
+  width: 10px;
+  height: 6px;
+  background: var(--sage);
+  border-radius: 50% 50% 50% 0;
   flex-shrink: 0;
-  position: relative;
+  opacity: 0.6;
+  transform: rotate(-10deg);
 }
 
-.divider-lemon::after {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 8px;
-  height: 7px;
-  background: var(--olive-light);
-  border-radius: 50% 50% 10% 10%;
-}
-
-/* Simple line divider */
 .divider-simple {
-  width: 60px;
-  height: 2px;
-  background: var(--azure-light);
-  margin: 20px auto;
-  border-radius: 1px;
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--blue-pale), transparent);
+  margin: 24px auto;
 }
 
 /* ============================================
-   HERO (Home Page) — SVG Illustrated Scene
+   HERO (Home Page) — Watercolor garden scene
    ============================================ */
 .home-page {
   position: relative;
@@ -456,109 +327,75 @@ a { color: inherit; }
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 90px 20px 40px;
+  padding: 80px 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 52px);
-  margin-top: 52px;
+  min-height: calc(100vh - 50px);
+  margin-top: 50px;
 }
 
 .hero-date {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--white);
-  text-shadow: 0 1px 10px rgba(0,0,0,0.2);
-  margin-bottom: 16px;
+  color: var(--blue);
+  margin-bottom: 10px;
 }
 
-.hero-title {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: clamp(4rem, 12vw, 8rem);
-  line-height: 0.95;
-  color: var(--white);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-shadow: 0 3px 20px rgba(0,0,0,0.18);
-  margin-bottom: 16px;
-}
-
-.hero-divider {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin: 12px 0 20px;
-}
-
-.hero-divider-line {
-  width: 60px;
-  height: 2px;
-  background: var(--lemon);
-  border-radius: 1px;
-}
-
-.hero-divider-dot {
-  width: 10px;
-  height: 12px;
-  background: var(--lemon);
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  border: 1px solid var(--lemon-dark);
-}
-
-.hero-name {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 3.5px;
-  text-transform: uppercase;
-  color: var(--white);
-  text-shadow: 0 1px 8px rgba(0,0,0,0.15);
-  line-height: 2;
-}
-
-.hero-amp {
+.hero-venue-script {
   font-family: var(--font-script);
-  font-size: 1.8rem;
-  color: var(--lemon);
-  text-shadow: 0 1px 6px rgba(0,0,0,0.1);
-  margin: 0;
-  line-height: 1;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  line-height: 1.05;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blue-light);
+  margin-bottom: 30px;
+}
+
+.hero-announce {
+  font-family: var(--font-serif-sc);
+  font-size: 0.78rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.hero-name-script {
+  font-family: var(--font-script);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: var(--blue);
+  line-height: 1.1;
+  margin-bottom: 4px;
 }
 
 .hero-location {
   font-family: var(--font-sans);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--lemon-pale);
-  margin-top: 20px;
-  text-shadow: 0 1px 6px rgba(0,0,0,0.12);
+  color: var(--blue-light);
+  margin-top: 24px;
 }
 
 .home-page .site-footer {
   position: relative;
   z-index: 1;
 }
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-  }
-
-  .hero-name {
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-  }
-}
-
-/* (Old hero CSS removed — now using SVG illustration) */
 
 /* ============================================
    BUTTONS
@@ -567,40 +404,30 @@ a { color: inherit; }
   display: inline-block;
   padding: 12px 36px;
   font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 700;
+  font-size: 0.65rem;
+  font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: var(--terracotta);
+  background: var(--blue);
   color: var(--white);
 }
 
 .btn:hover {
-  background: var(--terracotta-dark);
-  transform: translateY(-1px);
-}
-
-.btn-azure {
-  background: var(--azure);
-}
-
-.btn-azure:hover {
-  background: var(--azure-deep);
+  background: var(--blue-dark);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--terracotta);
-  border: 2px solid var(--terracotta);
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
 }
 
 .btn-outline:hover {
-  background: var(--terracotta);
+  background: var(--blue);
   color: var(--white);
 }
 
@@ -625,11 +452,11 @@ a { color: inherit; }
 .form-group label {
   display: block;
   font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 700;
+  font-size: 0.65rem;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--blue-dark);
   margin-bottom: 6px;
 }
 
@@ -638,12 +465,11 @@ a { color: inherit; }
 .form-group textarea {
   width: 100%;
   padding: 12px 14px;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--dark);
+  font-family: var(--font-serif);
+  font-size: 0.92rem;
+  color: var(--blue);
   background: var(--cream);
-  border: 2px solid var(--azure-pale);
-  border-radius: 4px;
+  border: 1px solid var(--blue-pale);
   outline: none;
   transition: border-color 0.3s ease;
 }
@@ -651,15 +477,104 @@ a { color: inherit; }
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--azure);
+  border-color: var(--blue);
 }
 
 .form-group textarea { resize: vertical; }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: var(--azure-light);
+  color: var(--blue-pale);
   font-style: italic;
+}
+
+/* ============================================
+   REGISTRY, FAQ, TRAVEL ITEMS
+   ============================================ */
+.registry-item {
+  display: block;
+  text-align: center;
+  padding: 22px 20px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  border: 1px solid var(--blue-pale);
+  transition: all 0.3s ease;
+}
+
+.registry-item:hover {
+  background: var(--ivory);
+  border-color: var(--blue-light);
+}
+
+.registry-name {
+  display: block;
+  font-family: var(--font-serif-sc);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  margin-bottom: 4px;
+}
+
+.registry-desc {
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--blue-light);
+}
+
+.faq-item {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.faq-item h3 {
+  font-family: var(--font-serif-sc);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: var(--blue);
+  line-height: 1.95;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.travel-block {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.travel-block h3 {
+  font-family: var(--font-serif-sc);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  margin-bottom: 8px;
+}
+
+.travel-block p {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: var(--blue);
+  line-height: 1.95;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.travel-block strong {
+  color: var(--blue-dark);
+  font-weight: 700;
 }
 
 /* ============================================
@@ -671,104 +586,10 @@ a { color: inherit; }
 }
 
 .rsvp-success p {
-  font-family: var(--font-body);
+  font-family: var(--font-serif);
   font-size: 0.95rem;
-  color: var(--dark);
+  color: var(--blue);
   line-height: 1.9;
-}
-
-/* ============================================
-   REGISTRY & FAQ
-   ============================================ */
-.registry-item {
-  display: block;
-  text-align: center;
-  padding: 22px 20px;
-  margin-bottom: 14px;
-  text-decoration: none;
-  border: 2px solid var(--azure-pale);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  background: var(--cream);
-}
-
-.registry-item:hover {
-  border-color: var(--azure);
-  background: var(--white);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(46, 134, 171, 0.1);
-}
-
-.registry-name {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 4px;
-}
-
-.registry-desc {
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-style: italic;
-  color: var(--terracotta-light);
-}
-
-.faq-item {
-  text-align: center;
-  margin: 24px 0;
-}
-
-.faq-item h3 {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--navy);
-  margin-bottom: 8px;
-}
-
-.faq-item p {
-  font-family: var(--font-body);
-  font-size: 0.88rem;
-  color: var(--dark);
-  line-height: 1.9;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-/* ============================================
-   TRAVEL CARDS
-   ============================================ */
-.travel-block {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.travel-block h3 {
-  font-family: var(--font-display);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--terracotta);
-  margin-bottom: 8px;
-}
-
-.travel-block p {
-  font-family: var(--font-body);
-  font-size: 0.88rem;
-  color: var(--dark);
-  line-height: 1.9;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.travel-block strong {
-  color: var(--navy);
-  font-weight: 700;
 }
 
 /* ============================================
@@ -776,23 +597,23 @@ a { color: inherit; }
    ============================================ */
 .site-footer {
   text-align: center;
-  padding: 24px 20px;
-  background: var(--navy);
-  color: var(--white);
+  padding: 28px 20px;
+  border-top: 1px solid var(--blue-pale);
+  background: var(--cream);
 }
 
 .footer-names {
   font-family: var(--font-script);
-  font-size: 1.8rem;
-  color: var(--lemon);
+  font-size: 1.6rem;
+  color: var(--blue);
 }
 
 .footer-detail {
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--azure-pale);
+  color: var(--blue-light);
   margin-top: 4px;
 }
 
@@ -801,8 +622,8 @@ a { color: inherit; }
    ============================================ */
 .fade-in {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(14px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .fade-in.visible {
@@ -814,9 +635,7 @@ a { color: inherit; }
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
-  .site-nav {
-    flex-wrap: wrap;
-  }
+  .site-nav { flex-wrap: wrap; }
 
   .nav-link {
     font-size: 0.55rem;
@@ -824,25 +643,9 @@ a { color: inherit; }
     padding: 10px 10px;
   }
 
-  .poster-card {
-    padding: 40px 28px;
-    border-radius: 8px;
+  .content-card {
+    padding: 44px 28px;
   }
-
-  .poster-card::before {
-    inset: 6px;
-    border-radius: 4px;
-  }
-
-  .lemon-decor { display: none; }
-  .flower-cluster { display: none; }
-
-  .hero-scene .sun {
-    width: 50px;
-    height: 50px;
-  }
-
-  .hero-scene .lemon-branch { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -852,11 +655,15 @@ a { color: inherit; }
     padding: 8px 6px;
   }
 
-  .poster-card {
-    padding: 32px 20px;
+  .content-card {
+    padding: 36px 20px;
   }
 
-  .display-title {
-    font-size: 2.2rem;
+  .hero-venue-script {
+    font-size: 3rem;
+  }
+
+  .hero-name-script {
+    font-size: 2rem;
   }
 }
