@@ -6,7 +6,7 @@
   'use strict';
 
   // ---- Countdown Timer ----
-  const WEDDING_DATE = new Date('2026-06-21T16:30:00');
+  const WEDDING_DATE = new Date('2026-08-08T19:00:00');
 
   function updateCountdown() {
     const now = new Date();
