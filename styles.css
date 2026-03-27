@@ -308,19 +308,15 @@ a { color: inherit; }
 }
 
 /* ============================================
-   HERO (Home Page) — Watercolor garden scene
+   HERO (Home Page) — Background image
    ============================================ */
 .home-page {
   position: relative;
   padding-top: 0;
-}
-
-.hero-illustration {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .hero-overlay-text {
@@ -334,6 +330,13 @@ a { color: inherit; }
   justify-content: center;
   min-height: calc(100vh - 50px);
   margin-top: 50px;
+  /* Subtle semi-transparent overlay for text readability */
+  background: radial-gradient(
+    ellipse at center 40%,
+    rgba(250, 248, 244, 0.55) 0%,
+    rgba(250, 248, 244, 0.3) 50%,
+    transparent 80%
+  );
 }
 
 .hero-date {
