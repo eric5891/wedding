@@ -6,7 +6,7 @@
   'use strict';
 
   // ---- Countdown Timer ----
-  const WEDDING_DATE = new Date('2026-06-21T16:00:00');
+  const WEDDING_DATE = new Date('2026-06-21T16:30:00');
 
   function updateCountdown() {
     const now = new Date();
@@ -78,7 +78,7 @@
 
   // ---- Fade-in on Scroll ----
   var fadeElements = document.querySelectorAll(
-    '.story-item, .detail-card, .gallery-item, .registry-card, .rsvp-form, .section-title, .section-subtitle'
+    '.story-item, .detail-card, .gallery-item, .registry-card, .rsvp-form, .section-title, .section-subtitle, .venue-name, .venue-description, .travel-card'
   );
 
   fadeElements.forEach(function (el) {

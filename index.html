@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polina & Eric — Wedding</title>
+  <title>Polina & Eric — Wedding at Villa Cimbrone, Ravello</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,10 @@
   <nav id="main-nav">
     <ul>
       <li><a href="#home">Home</a></li>
+      <li><a href="#venue">Venue</a></li>
       <li><a href="#our-story">Our Story</a></li>
       <li><a href="#details">Details</a></li>
+      <li><a href="#travel">Travel</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#rsvp">RSVP</a></li>
       <li><a href="#registry">Registry</a></li>
@@ -31,6 +33,7 @@
       <div class="hero-divider"></div>
       <p class="hero-date">Saturday, the Twenty-First of June</p>
       <p class="hero-date">Two Thousand and Twenty-Six</p>
+      <p class="hero-location">Villa Cimbrone &bull; Ravello, Italy</p>
       <div class="countdown" id="countdown"></div>
     </div>
     <div class="scroll-indicator">
@@ -38,6 +41,19 @@
       <div class="scroll-arrow"></div>
     </div>
   </header>
+
+  <!-- Venue Showcase Section -->
+  <section id="venue" class="venue-showcase">
+    <div class="container">
+      <h2 class="section-title">The Venue</h2>
+      <div class="section-divider"></div>
+      <p class="venue-name">Villa Cimbrone</p>
+      <p class="venue-location">Ravello &bull; Amalfi Coast &bull; Italy</p>
+      <p class="venue-description">
+        Perched high above the Amalfi Coast, Villa Cimbrone is a historic estate renowned for its breathtaking Terrace of Infinity — where ancient marble busts frame panoramic views of the Mediterranean Sea stretching to eternity. Among centuries-old gardens, flowering pergolas, and sun-drenched stone, we will celebrate our love in one of the most beautiful places on earth.
+      </p>
+    </div>
+  </section>
 
   <!-- Our Story Section -->
   <section id="our-story" class="section">
@@ -65,7 +81,7 @@
   </section>
 
   <!-- Event Details Section -->
-  <section id="details" class="section section-alt">
+  <section id="details" class="section section-mediterranean">
     <div class="container">
       <h2 class="section-title">Wedding Details</h2>
       <div class="section-divider"></div>
@@ -73,24 +89,51 @@
         <div class="detail-card">
           <div class="detail-icon">&#9829;</div>
           <h3>Ceremony</h3>
-          <p class="detail-time">4:00 PM</p>
-          <p class="detail-venue">The Garden Chapel</p>
-          <p class="detail-address">123 Blossom Lane<br>Napa Valley, CA 94558</p>
+          <p class="detail-time">4:30 PM</p>
+          <p class="detail-venue">Terrace of Infinity</p>
+          <p class="detail-address">Villa Cimbrone<br>Via Santa Chiara, 26<br>84010 Ravello SA, Italy</p>
           <p class="detail-note">Please arrive 30 minutes early</p>
         </div>
         <div class="detail-card">
           <div class="detail-icon">&#9733;</div>
           <h3>Reception</h3>
-          <p class="detail-time">6:00 PM</p>
-          <p class="detail-venue">Vineyard Estate Ballroom</p>
-          <p class="detail-address">456 Vine Road<br>Napa Valley, CA 94558</p>
-          <p class="detail-note">Dinner, dancing & celebration</p>
+          <p class="detail-time">6:30 PM</p>
+          <p class="detail-venue">Villa Cimbrone Gardens</p>
+          <p class="detail-address">Dinner under the stars among<br>the historic gardens and terraces</p>
+          <p class="detail-note">Aperitivo, dinner, dancing & celebration</p>
         </div>
         <div class="detail-card">
           <div class="detail-icon">&#9788;</div>
           <h3>Dress Code</h3>
-          <p class="detail-venue">Semi-Formal / Cocktail</p>
-          <p class="detail-note">We'll be celebrating outdoors, so please plan for warm weather and grassy terrain.</p>
+          <p class="detail-venue">Formal / Black Tie Optional</p>
+          <p class="detail-note">The ceremony and reception are outdoors on garden terraces. We recommend elegant footwear suitable for stone paths and grass.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Section -->
+  <section id="travel" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Getting There</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Ravello sits high in the hills above the Amalfi Coast. Here is everything you need to plan your journey to this magical corner of southern Italy.</p>
+      <div class="travel-grid">
+        <div class="travel-card">
+          <h3>Flying In</h3>
+          <p>The nearest international airport is <span class="travel-highlight">Naples International Airport (NAP)</span>, approximately 65 km from Ravello. Rome's Fiumicino Airport (FCO) is another option, with high-speed train service to Naples.</p>
+        </div>
+        <div class="travel-card">
+          <h3>Getting to Ravello</h3>
+          <p>From Naples, you can reach Ravello by <span class="travel-highlight">private car transfer</span> (approx. 75 minutes) along the stunning coastal road, or by ferry from Naples to Amalfi followed by a short drive up the hillside.</p>
+        </div>
+        <div class="travel-card">
+          <h3>Where to Stay</h3>
+          <p>Ravello offers charming hotels with spectacular views. We recommend booking in <span class="travel-highlight">Ravello, Amalfi, or Positano</span>. A room block will be available — details to follow.</p>
+        </div>
+        <div class="travel-card">
+          <h3>While You're There</h3>
+          <p>Explore the <span class="travel-highlight">Amalfi Coast</span> — visit Positano's pastel cliffside, taste limoncello in Amalfi, take a boat to Capri, or wander the ancient ruins of Pompeii. Make it a holiday!</p>
         </div>
       </div>
     </div>
@@ -144,7 +187,7 @@
   </section>
 
   <!-- RSVP Section -->
-  <section id="rsvp" class="section section-alt">
+  <section id="rsvp" class="section section-mediterranean">
     <div class="container">
       <h2 class="section-title">RSVP</h2>
       <div class="section-divider"></div>
@@ -187,8 +230,8 @@
       </form>
       <div id="rsvp-success" class="rsvp-success hidden">
         <div class="success-icon">&#10003;</div>
-        <h3>Thank You!</h3>
-        <p>Your RSVP has been received. We can't wait to celebrate with you!</p>
+        <h3>Grazie!</h3>
+        <p>Your RSVP has been received. We can't wait to celebrate with you in Ravello!</p>
       </div>
     </div>
   </section>
@@ -198,7 +241,7 @@
     <div class="container">
       <h2 class="section-title">Registry</h2>
       <div class="section-divider"></div>
-      <p class="section-subtitle">Your presence is our greatest gift, but if you wish to honor us further, we've registered at the following places.</p>
+      <p class="section-subtitle">Your presence in Ravello is the greatest gift we could ask for. But if you wish to honor us further, we've registered at the following places.</p>
       <div class="registry-grid">
         <a href="#" class="registry-card">
           <div class="registry-icon">&#127873;</div>
@@ -208,7 +251,7 @@
         <a href="#" class="registry-card">
           <div class="registry-icon">&#9992;</div>
           <h3>Honeymoon Fund</h3>
-          <p>Help us create unforgettable travel memories</p>
+          <p>Help us continue our Italian adventure</p>
         </a>
         <a href="#" class="registry-card">
           <div class="registry-icon">&#127968;</div>
@@ -223,7 +266,7 @@
   <footer class="footer">
     <div class="container">
       <h2 class="footer-names">Polina & Eric</h2>
-      <p class="footer-date">June 21, 2026 &bull; Napa Valley, California</p>
+      <p class="footer-date">June 21, 2026 &bull; Villa Cimbrone, Ravello, Italy</p>
       <p class="footer-hashtag">#PolinaAndEricForever</p>
       <p class="footer-note">Made with love</p>
     </div>

@@ -1,18 +1,26 @@
 /* ============================================
-   Wedding Website — Stylesheet
+   Wedding Website — Villa Cimbrone, Ravello
+   Amalfi Coast Inspired Design
    ============================================ */
 
 :root {
-  --color-cream: #fdf8f4;
-  --color-blush: #f5e6dc;
-  --color-rose: #c9a89a;
-  --color-dusty-rose: #b8847c;
-  --color-sage: #a8b5a0;
-  --color-deep-sage: #6b7f62;
-  --color-charcoal: #3a3a3a;
-  --color-dark: #2c2c2c;
-  --color-gold: #c4a265;
-  --color-gold-light: #dfc9a0;
+  /* Mediterranean palette — azure sea, sun-bleached stone, terracotta, lemon groves */
+  --color-ivory: #faf7f2;
+  --color-stone: #e8e0d4;
+  --color-warm-stone: #d4c9b8;
+  --color-terracotta: #c4714e;
+  --color-terracotta-light: #d4896b;
+  --color-azure: #4a90a8;
+  --color-azure-deep: #2e6b82;
+  --color-azure-pale: #b8d8e8;
+  --color-olive: #7a8b6a;
+  --color-olive-deep: #5c6b4e;
+  --color-lemon: #e8c84a;
+  --color-lemon-pale: #f5edc2;
+  --color-charcoal: #3a3532;
+  --color-dark: #2a2622;
+  --color-gold: #b89f65;
+  --color-gold-light: #d4c48a;
   --color-white: #ffffff;
 
   --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
@@ -39,7 +47,7 @@ body {
   font-family: var(--font-sans);
   font-weight: 300;
   color: var(--color-charcoal);
-  background-color: var(--color-cream);
+  background-color: var(--color-ivory);
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -61,9 +69,9 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(253, 248, 244, 0.95);
+  background: rgba(250, 247, 242, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(201, 168, 154, 0.2);
+  border-bottom: 1px solid rgba(74, 144, 168, 0.12);
   transform: translateY(-100%);
   transition: transform 0.4s ease;
 }
@@ -92,7 +100,7 @@ body {
 }
 
 #main-nav a:hover {
-  color: var(--color-dusty-rose);
+  color: var(--color-azure);
 }
 
 /* ---- Hero Section ---- */
@@ -103,23 +111,39 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #e8d5c4 0%, #f0e0d0 30%, #d4c4b0 70%, #c9b89a 100%);
+  background:
+    linear-gradient(180deg,
+      #6bafc9 0%,
+      #8cc4d8 15%,
+      #a8d5e4 28%,
+      #c8e2ec 38%,
+      #e0ece8 46%,
+      #c5cbb0 52%,
+      #a8b48c 58%,
+      #8a9a6e 64%,
+      #d4c9b8 70%,
+      #e8dfd0 78%,
+      #f0e8da 86%,
+      #faf7f2 100%
+    );
   overflow: hidden;
 }
 
+/* Decorative lemon/tile pattern overlay */
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(168, 181, 160, 0.15) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 30%, rgba(196, 162, 101, 0.1) 0%, transparent 50%);
+    radial-gradient(ellipse at 15% 20%, rgba(232, 200, 74, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 15%, rgba(232, 200, 74, 0.06) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 70%, rgba(196, 113, 78, 0.04) 0%, transparent 50%);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(253, 248, 244, 0.3);
+  background: rgba(250, 247, 242, 0.15);
 }
 
 .hero-content {
@@ -134,7 +158,7 @@ body {
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--color-dusty-rose);
+  color: var(--color-azure-deep);
   margin-bottom: 20px;
 }
 
@@ -149,7 +173,7 @@ body {
 
 .ampersand {
   font-style: italic;
-  color: var(--color-gold);
+  color: var(--color-terracotta);
   display: inline-block;
   margin: 0 10px;
 }
@@ -167,6 +191,16 @@ body {
   font-weight: 300;
   color: var(--color-charcoal);
   letter-spacing: 2px;
+}
+
+.hero-location {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-azure-deep);
+  margin-top: 12px;
 }
 
 /* Countdown */
@@ -196,7 +230,7 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--color-dusty-rose);
+  color: var(--color-azure-deep);
   margin-top: 6px;
 }
 
@@ -215,13 +249,13 @@ body {
   font-size: 0.65rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--color-dusty-rose);
+  color: var(--color-azure-deep);
 }
 
 .scroll-arrow {
   width: 1px;
   height: 40px;
-  background: var(--color-dusty-rose);
+  background: var(--color-azure-deep);
   margin: 10px auto 0;
   animation: scrollPulse 2s ease-in-out infinite;
 }
@@ -240,6 +274,28 @@ body {
   background-color: var(--color-white);
 }
 
+/* Mediterranean-inspired decorative section with terracotta/tile feel */
+.section-mediterranean {
+  background: linear-gradient(180deg, var(--color-stone) 0%, var(--color-ivory) 100%);
+  position: relative;
+}
+
+.section-mediterranean::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-terracotta) 0px,
+    var(--color-terracotta) 20px,
+    transparent 20px,
+    transparent 24px
+  );
+}
+
 .section-title {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 5vw, 3.2rem);
@@ -251,7 +307,7 @@ body {
 .section-divider {
   width: 60px;
   height: 1px;
-  background: var(--color-gold);
+  background: var(--color-terracotta-light);
   margin: 20px auto 30px;
 }
 
@@ -264,6 +320,47 @@ body {
   max-width: 600px;
   margin: 0 auto 50px;
   line-height: 1.8;
+}
+
+/* ---- Venue Showcase ---- */
+.venue-showcase {
+  padding: 120px 0;
+  background:
+    linear-gradient(180deg,
+      rgba(74, 144, 168, 0.06) 0%,
+      rgba(250, 247, 242, 0) 100%
+    );
+  text-align: center;
+}
+
+.venue-name {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.venue-location {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-azure-deep);
+  margin-bottom: 30px;
+}
+
+.venue-description {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: var(--color-charcoal);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 2;
+  font-style: italic;
 }
 
 /* ---- Our Story Timeline ---- */
@@ -280,7 +377,7 @@ body {
   top: 0;
   bottom: 0;
   width: 1px;
-  background: var(--color-blush);
+  background: var(--color-azure-pale);
   transform: translateX(-50%);
 }
 
@@ -297,7 +394,7 @@ body {
   top: 30px;
   width: 10px;
   height: 10px;
-  background: var(--color-gold);
+  background: var(--color-terracotta);
   border-radius: 50%;
   transform: translateX(-50%);
 }
@@ -308,7 +405,7 @@ body {
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--color-dusty-rose);
+  color: var(--color-azure-deep);
   margin-bottom: 10px;
 }
 
@@ -339,20 +436,20 @@ body {
 .detail-card {
   text-align: center;
   padding: 50px 30px;
-  background: var(--color-cream);
+  background: var(--color-ivory);
   border-radius: 4px;
-  border: 1px solid rgba(201, 168, 154, 0.15);
+  border: 1px solid rgba(74, 144, 168, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .detail-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 40px rgba(42, 38, 34, 0.06);
 }
 
 .detail-icon {
   font-size: 2rem;
-  color: var(--color-gold);
+  color: var(--color-terracotta);
   margin-bottom: 20px;
 }
 
@@ -368,7 +465,7 @@ body {
   font-family: var(--font-serif);
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--color-dusty-rose);
+  color: var(--color-azure-deep);
   margin-bottom: 8px;
 }
 
@@ -389,7 +486,43 @@ body {
 .detail-note {
   font-size: 0.8rem;
   font-style: italic;
-  color: var(--color-rose);
+  color: var(--color-terracotta-light);
+}
+
+/* ---- Travel Section ---- */
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.travel-card {
+  padding: 40px 30px;
+  background: var(--color-white);
+  border-radius: 4px;
+  border: 1px solid rgba(74, 144, 168, 0.1);
+  border-top: 3px solid var(--color-azure);
+}
+
+.travel-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  margin-bottom: 14px;
+}
+
+.travel-card p {
+  font-size: 0.88rem;
+  color: var(--color-charcoal);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.travel-card .travel-highlight {
+  font-weight: 500;
+  color: var(--color-azure-deep);
 }
 
 /* ---- Photo Gallery ---- */
@@ -417,7 +550,7 @@ body {
 .gallery-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--color-blush), var(--color-rose));
+  background: linear-gradient(135deg, var(--color-azure-pale), var(--color-azure));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -440,6 +573,15 @@ body {
   font-size: 0.75rem;
   margin-top: 6px;
   opacity: 0.8;
+}
+
+/* Alternate gallery colors for variety */
+.gallery-item:nth-child(2n) .gallery-placeholder {
+  background: linear-gradient(135deg, var(--color-stone), var(--color-terracotta-light));
+}
+
+.gallery-item:nth-child(3n) .gallery-placeholder {
+  background: linear-gradient(135deg, var(--color-olive), var(--color-olive-deep));
 }
 
 /* ---- RSVP Form ---- */
@@ -472,8 +614,8 @@ body {
   font-size: 0.9rem;
   font-weight: 300;
   color: var(--color-dark);
-  background: var(--color-cream);
-  border: 1px solid var(--color-blush);
+  background: var(--color-ivory);
+  border: 1px solid var(--color-stone);
   border-radius: 4px;
   outline: none;
   transition: border-color 0.3s ease;
@@ -482,7 +624,7 @@ body {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--color-dusty-rose);
+  border-color: var(--color-azure);
 }
 
 .form-group textarea {
@@ -499,7 +641,7 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--color-white);
-  background: var(--color-dusty-rose);
+  background: var(--color-terracotta);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -507,7 +649,7 @@ body {
 }
 
 .btn-submit:hover {
-  background: var(--color-rose);
+  background: var(--color-terracotta-light);
   transform: translateY(-1px);
 }
 
@@ -528,7 +670,7 @@ body {
   height: 70px;
   line-height: 70px;
   border-radius: 50%;
-  background: var(--color-sage);
+  background: var(--color-olive);
   color: var(--color-white);
   font-size: 2rem;
   margin: 0 auto 20px;
@@ -558,7 +700,7 @@ body {
   text-align: center;
   padding: 50px 30px;
   background: var(--color-white);
-  border: 1px solid rgba(201, 168, 154, 0.15);
+  border: 1px solid rgba(74, 144, 168, 0.1);
   border-radius: 4px;
   text-decoration: none;
   color: inherit;
@@ -567,7 +709,7 @@ body {
 
 .registry-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 40px rgba(42, 38, 34, 0.06);
 }
 
 .registry-icon {
@@ -593,7 +735,7 @@ body {
   padding: 80px 0;
   text-align: center;
   background: var(--color-dark);
-  color: var(--color-cream);
+  color: var(--color-ivory);
 }
 
 .footer-names {
@@ -609,7 +751,7 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  color: var(--color-rose);
+  color: var(--color-terracotta-light);
 }
 
 .footer-hashtag {
@@ -624,7 +766,7 @@ body {
   font-size: 0.75rem;
   font-weight: 300;
   letter-spacing: 1px;
-  color: rgba(253, 248, 244, 0.4);
+  color: rgba(250, 247, 242, 0.4);
 }
 
 /* ---- Fade-in Animations ---- */
@@ -686,8 +828,13 @@ body {
     grid-column: span 1;
   }
 
-  .details-grid {
+  .details-grid,
+  .travel-grid {
     grid-template-columns: 1fr;
+  }
+
+  .venue-showcase {
+    padding: 80px 0;
   }
 }
 
