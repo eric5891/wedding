@@ -7,269 +7,363 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+SC:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
+
+  <!-- Fixed Navigation -->
   <nav id="main-nav">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#venue">Venue</a></li>
-      <li><a href="#our-story">Our Story</a></li>
-      <li><a href="#details">Details</a></li>
-      <li><a href="#travel">Travel</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#rsvp">RSVP</a></li>
-      <li><a href="#registry">Registry</a></li>
-    </ul>
+    <a href="#home" class="nav-link active" data-section="home">Home</a>
+    <a href="#agenda" class="nav-link" data-section="agenda">Agenda</a>
+    <a href="#our-story" class="nav-link" data-section="our-story">Our Story</a>
+    <a href="#travel" class="nav-link" data-section="travel">Travel</a>
+    <a href="#registry" class="nav-link" data-section="registry">Registry</a>
+    <a href="#rsvp" class="nav-link" data-section="rsvp">R.S.V.P.</a>
+    <a href="#faqs" class="nav-link" data-section="faqs">FAQs</a>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="home" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-pretext">Together with their families</p>
-      <h1 class="hero-names">Polina <span class="ampersand">&amp;</span> Eric</h1>
-      <div class="hero-divider"></div>
-      <p class="hero-date">Saturday, the Eighth of August</p>
-      <p class="hero-date">Two Thousand and Twenty-Six</p>
-      <p class="hero-location">Villa Cimbrone &bull; Ravello, Italy</p>
-      <div class="countdown" id="countdown"></div>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </header>
+  <!-- ==================== HOME ==================== -->
+  <section id="home" class="page-section">
+    <div class="ornate-frame frame-large">
+      <div class="frame-top">
+        <!-- Monogram -->
+        <div class="monogram">P<span class="monogram-amp">&amp;</span>E</div>
+        <!-- Top ornamental crown -->
+        <div class="ornament-crown">
+          <svg viewBox="0 0 200 60" class="ornament-svg">
+            <path d="M100 55 C100 55 60 50 40 30 C25 15 30 5 50 5 C65 5 75 15 80 25 C85 15 95 5 100 2 C105 5 115 15 120 25 C125 15 135 5 150 5 C170 5 175 15 160 30 C140 50 100 55 100 55Z" fill="none" stroke="#7a8b6a" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="ornament-swag">
+          <div class="swag-drape left"></div>
+          <div class="swag-drape right"></div>
+        </div>
+        <div class="ornament-vine vine-top-left"></div>
+        <div class="ornament-vine vine-top-right"></div>
+      </div>
 
-  <!-- Venue Showcase Section -->
-  <section id="venue" class="venue-showcase">
-    <div class="container">
-      <h2 class="section-title">The Venue</h2>
-      <div class="section-divider"></div>
-      <p class="venue-name">Villa Cimbrone</p>
-      <p class="venue-location">Ravello &bull; Amalfi Coast &bull; Italy</p>
-      <p class="venue-description">
-        Perched high above the Amalfi Coast, Villa Cimbrone is a historic estate renowned for its breathtaking Terrace of Infinity — where ancient marble busts frame panoramic views of the Mediterranean Sea stretching to eternity. Among centuries-old gardens, flowering pergolas, and sun-drenched stone, we will celebrate our love in one of the most beautiful places on earth.
-      </p>
-    </div>
-  </section>
+      <div class="frame-border">
+        <div class="vine-border vine-left"></div>
+        <div class="vine-border vine-right"></div>
 
-  <!-- Our Story Section -->
-  <section id="our-story" class="section">
-    <div class="container">
-      <h2 class="section-title">Our Story</h2>
-      <div class="section-divider"></div>
-      <div class="story-timeline">
-        <div class="story-item">
-          <div class="story-date">June 2020</div>
-          <h3>How We Met</h3>
-          <p>We first crossed paths at a friend's dinner party. Eric spilled wine on Polina's dress, and somehow that clumsy moment turned into the most beautiful beginning. We talked for hours and knew something special had started.</p>
+        <div class="frame-content">
+          <!-- Illustration placeholder -->
+          <div class="illustration-frame">
+            <div class="illustration-placeholder hero-illustration">
+              <div class="illustration-scene">
+                <div class="scene-sky"></div>
+                <div class="scene-hills"></div>
+                <div class="scene-water"></div>
+                <div class="scene-villa"></div>
+              </div>
+              <p class="illustration-label">Villa Cimbrone, Ravello</p>
+            </div>
+          </div>
         </div>
-        <div class="story-item">
-          <div class="story-date">December 2021</div>
-          <h3>First Adventure Together</h3>
-          <p>Our first big trip together took us to the mountains of Colorado. Between snowball fights and cozy evenings by the fire, we realized we never wanted to stop exploring the world — or life — together.</p>
+      </div>
+
+      <div class="frame-bottom">
+        <div class="ornament-vine vine-bottom-left"></div>
+        <div class="ornament-vine vine-bottom-right"></div>
+        <div class="ornament-swag bottom-swag">
+          <div class="swag-drape left"></div>
+          <div class="swag-drape right"></div>
         </div>
-        <div class="story-item">
-          <div class="story-date">August 2025</div>
-          <h3>The Proposal</h3>
-          <p>On a quiet evening walk along the beach at sunset, Eric got down on one knee. Through happy tears, Polina said "yes" before he even finished asking. It was the most perfect moment of our lives.</p>
-        </div>
+        <div class="ornament-finial"></div>
       </div>
     </div>
   </section>
 
-  <!-- Event Details Section -->
-  <section id="details" class="section section-mediterranean">
-    <div class="container">
-      <h2 class="section-title">Wedding Details</h2>
-      <div class="section-divider"></div>
-      <div class="details-grid">
-        <div class="detail-card">
-          <div class="detail-icon">&#9829;</div>
-          <h3>Ceremony</h3>
-          <p class="detail-time">7:00 PM</p>
-          <p class="detail-venue">Terrace of Infinity</p>
-          <p class="detail-address">Villa Cimbrone<br>Via Santa Chiara, 26<br>84010 Ravello SA, Italy</p>
-          <p class="detail-note">Please arrive 30 minutes early</p>
+  <!-- ==================== AGENDA ==================== -->
+  <section id="agenda" class="page-section">
+    <div class="ornate-frame">
+      <div class="frame-ornament-top"></div>
+      <div class="frame-border">
+        <div class="vine-border vine-left"></div>
+        <div class="vine-border vine-right"></div>
+        <div class="frame-content">
+
+          <h2 class="script-heading">Benvenuti</h2>
+          <p class="couple-names">Polina Belopashentseva</p>
+          <p class="couple-and">and</p>
+          <p class="couple-names">Eric Khrom</p>
+
+          <h2 class="script-heading" style="margin-top: 50px;">Wedding Weekend</h2>
+
+          <div class="ornamental-divider"></div>
+
+          <!-- Wedding Day Event -->
+          <div class="event-block">
+            <div class="illustration-vignette">
+              <div class="vignette-placeholder">
+                <span>Villa Cimbrone</span>
+              </div>
+            </div>
+            <h3 class="script-heading event-title">Wedding Day</h3>
+            <p class="event-date">Saturday, August 8, 2026</p>
+            <p class="event-detail-label">Ceremony</p>
+            <p class="event-detail-value">7:00 PM</p>
+            <p class="event-detail-label">Reception</p>
+            <p class="event-detail-value">8:30 PM</p>
+            <p class="event-detail-label">After Party</p>
+            <p class="event-detail-value">11:00 PM</p>
+            <div class="event-venue">
+              <p>Villa Cimbrone</p>
+              <p>Via Santa Chiara, 26 — Ravello, Italy</p>
+            </div>
+            <div class="event-dresscode">
+              <p class="dresscode-title">Dress Code</p>
+              <p>Black tie optional.</p>
+              <p class="dresscode-note">The ceremony and reception are outdoors on garden terraces.<br>We recommend elegant footwear suitable for stone paths.</p>
+            </div>
+            <div class="event-buttons">
+              <a href="#" class="btn-ornate">Map</a>
+              <a href="#" class="btn-ornate btn-outline">Add to Calendar</a>
+            </div>
+          </div>
+
         </div>
-        <div class="detail-card">
-          <div class="detail-icon">&#9733;</div>
-          <h3>Reception</h3>
-          <p class="detail-time">8:30 PM</p>
-          <p class="detail-venue">Villa Cimbrone Gardens</p>
-          <p class="detail-address">Dinner under the stars among<br>the historic gardens and terraces</p>
-          <p class="detail-note">Aperitivo, dinner, dancing & celebration</p>
-        </div>
-        <div class="detail-card">
-          <div class="detail-icon">&#9788;</div>
-          <h3>Dress Code</h3>
-          <p class="detail-venue">Formal / Black Tie Optional</p>
-          <p class="detail-note">The ceremony and reception are outdoors on garden terraces. We recommend elegant footwear suitable for stone paths and grass.</p>
-        </div>
+      </div>
+      <div class="frame-ornament-bottom"></div>
+    </div>
+
+    <!-- Full-width illustration band -->
+    <div class="illustration-band">
+      <div class="band-scene">
+        <div class="band-sky"></div>
+        <div class="band-hills"></div>
+        <div class="band-buildings"></div>
+        <div class="band-water"></div>
       </div>
     </div>
   </section>
 
-  <!-- Travel Section -->
-  <section id="travel" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Getting There</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">Ravello sits high in the hills above the Amalfi Coast. Here is everything you need to plan your journey to this magical corner of southern Italy.</p>
-      <div class="travel-grid">
-        <div class="travel-card">
-          <h3>Flying In</h3>
-          <p>The nearest international airport is <span class="travel-highlight">Naples International Airport (NAP)</span>, approximately 65 km from Ravello. Rome's Fiumicino Airport (FCO) is another option, with high-speed train service to Naples.</p>
-        </div>
-        <div class="travel-card">
-          <h3>Getting to Ravello</h3>
-          <p>From Naples, you can reach Ravello by <span class="travel-highlight">private car transfer</span> (approx. 75 minutes) along the stunning coastal road, or by ferry from Naples to Amalfi followed by a short drive up the hillside.</p>
-        </div>
-        <div class="travel-card">
-          <h3>Where to Stay</h3>
-          <p>Ravello offers charming hotels with spectacular views. We recommend booking in <span class="travel-highlight">Ravello, Amalfi, or Positano</span>. A room block will be available — details to follow.</p>
-        </div>
-        <div class="travel-card">
-          <h3>While You're There</h3>
-          <p>Explore the <span class="travel-highlight">Amalfi Coast</span> — visit Positano's pastel cliffside, taste limoncello in Amalfi, take a boat to Capri, or wander the ancient ruins of Pompeii. Make it a holiday!</p>
+  <!-- ==================== OUR STORY ==================== -->
+  <section id="our-story" class="page-section">
+    <div class="ornate-frame">
+      <div class="frame-ornament-top"></div>
+      <div class="frame-border">
+        <div class="vine-border vine-left"></div>
+        <div class="vine-border vine-right"></div>
+        <div class="frame-content">
+
+          <h2 class="script-heading">Our Story</h2>
+
+          <div class="story-text">
+            <p class="story-intro">Some love stories begin with a grand gesture.<br>Ours, fittingly, began with a spilled glass of wine.</p>
+
+            <p>We first crossed paths at a friend's dinner party in June 2020. Eric spilled wine on Polina's dress, and somehow that clumsy moment turned into the most beautiful beginning. We talked for hours that evening, discovering shared passions for travel, good food, and the kind of laughter that makes your sides ache.</p>
+
+            <p>We spent our early days exploring the city together, finding our favorite coffee shops and hidden restaurants, building a world that felt entirely our own.</p>
+
+            <div class="story-divider-ornament"></div>
+
+            <p>Our first big adventure together took us to the mountains of Colorado in December 2021. Between snowball fights and cozy evenings by the fire, we realized we never wanted to stop exploring the world — or life — together.</p>
+
+            <p>After that, every trip brought us closer: weekends on the coast, summers abroad, quiet mornings that stretched into afternoons. We learned each other's rhythms and found that the best moments were always the simplest ones — together.</p>
+
+            <div class="story-divider-ornament"></div>
+
+            <p>And then, on a quiet August evening in 2025, walking along the beach at sunset, Eric got down on one knee. Through happy tears, Polina said "yes" before he even finished asking.</p>
+
+            <p class="story-closing">Some might call it fate, others a beautiful coincidence.<br>But maybe it was always going to be Polina and Eric —<br>love just had to catch up with them.</p>
+          </div>
+
         </div>
       </div>
+      <div class="frame-ornament-bottom"></div>
     </div>
   </section>
 
-  <!-- Photo Gallery Section -->
-  <section id="gallery" class="section">
-    <div class="container">
-      <h2 class="section-title">Our Moments</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">A collection of our favorite memories together</p>
-      <div class="gallery-grid">
-        <div class="gallery-item gallery-tall">
-          <div class="gallery-placeholder">
-            <span>Photo 1</span>
-            <p>Add your photo here</p>
+  <!-- ==================== TRAVEL ==================== -->
+  <section id="travel" class="page-section">
+    <div class="ornate-frame">
+      <div class="frame-ornament-top"></div>
+      <div class="frame-border">
+        <div class="vine-border vine-left"></div>
+        <div class="vine-border vine-right"></div>
+        <div class="frame-content">
+
+          <h2 class="script-heading">Travel</h2>
+
+          <div class="travel-info">
+            <div class="travel-block">
+              <h3 class="smallcaps-heading">Getting There</h3>
+              <p>The nearest international airport is <strong>Naples International Airport (NAP)</strong>, approximately 65 km from Ravello. Rome's Fiumicino Airport (FCO) is another option, with high-speed train service to Naples.</p>
+            </div>
+
+            <div class="ornamental-divider small"></div>
+
+            <div class="travel-block">
+              <h3 class="smallcaps-heading">Naples to Ravello</h3>
+              <p>From Naples, you can reach Ravello by <strong>private car transfer</strong> (approx. 75 minutes) along the stunning Amalfi coastal road, or by ferry from Naples to Amalfi followed by a short drive up the hillside to Ravello.</p>
+            </div>
+
+            <div class="ornamental-divider small"></div>
+
+            <div class="travel-block">
+              <h3 class="smallcaps-heading">Where to Stay</h3>
+              <p>Ravello offers charming hotels with spectacular views of the Amalfi Coast. We recommend booking in <strong>Ravello, Amalfi, or Positano</strong>. A room block will be available — details to follow.</p>
+            </div>
+
+            <div class="ornamental-divider small"></div>
+
+            <div class="travel-block">
+              <h3 class="smallcaps-heading">While You're There</h3>
+              <p>Explore the Amalfi Coast — visit Positano's pastel cliffside villages, taste fresh limoncello in Amalfi, take a boat to the island of Capri, or wander the ancient ruins of Pompeii. Make it a holiday!</p>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <span>Photo 2</span>
-            <p>Add your photo here</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <span>Photo 3</span>
-            <p>Add your photo here</p>
-          </div>
-        </div>
-        <div class="gallery-item gallery-wide">
-          <div class="gallery-placeholder">
-            <span>Photo 4</span>
-            <p>Add your photo here</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <span>Photo 5</span>
-            <p>Add your photo here</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <span>Photo 6</span>
-            <p>Add your photo here</p>
-          </div>
+
         </div>
       </div>
+      <div class="frame-ornament-bottom"></div>
     </div>
   </section>
 
-  <!-- RSVP Section -->
-  <section id="rsvp" class="section section-mediterranean">
-    <div class="container">
-      <h2 class="section-title">RSVP</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">Kindly respond by May 1st, 2026</p>
-      <form id="rsvp-form" class="rsvp-form">
-        <div class="form-group">
-          <label for="guest-name">Full Name</label>
-          <input type="text" id="guest-name" name="name" required placeholder="Your full name">
+  <!-- ==================== REGISTRY ==================== -->
+  <section id="registry" class="page-section">
+    <div class="ornate-frame">
+      <div class="frame-ornament-top"></div>
+      <div class="frame-border">
+        <div class="vine-border vine-left"></div>
+        <div class="vine-border vine-right"></div>
+        <div class="frame-content">
+
+          <h2 class="script-heading">Registry</h2>
+
+          <p class="section-note">Your presence in Ravello is the greatest gift we could ask for.<br>But if you wish to honor us further, we've registered at the following places.</p>
+
+          <div class="registry-list">
+            <a href="#" class="registry-item">
+              <span class="registry-name">Crate & Barrel</span>
+              <span class="registry-desc">Home essentials for our new life together</span>
+            </a>
+            <a href="#" class="registry-item">
+              <span class="registry-name">Honeymoon Fund</span>
+              <span class="registry-desc">Help us continue our Italian adventure</span>
+            </a>
+            <a href="#" class="registry-item">
+              <span class="registry-name">Williams Sonoma</span>
+              <span class="registry-desc">For our love of cooking & entertaining</span>
+            </a>
+          </div>
+
         </div>
-        <div class="form-group">
-          <label for="guest-email">Email Address</label>
-          <input type="email" id="guest-email" name="email" required placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label for="attendance">Will you attend?</label>
-          <select id="attendance" name="attendance" required>
-            <option value="" disabled selected>Please select</option>
-            <option value="yes">Joyfully Accepts</option>
-            <option value="no">Regretfully Declines</option>
-          </select>
-        </div>
-        <div class="form-group" id="guest-count-group">
-          <label for="guest-count">Number of Guests</label>
-          <select id="guest-count" name="guests">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-        <div class="form-group" id="dietary-group">
-          <label for="dietary">Dietary Restrictions</label>
-          <input type="text" id="dietary" name="dietary" placeholder="Any allergies or dietary needs">
-        </div>
-        <div class="form-group">
-          <label for="message">Message for the Couple</label>
-          <textarea id="message" name="message" rows="4" placeholder="Share your well wishes..."></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Send RSVP</button>
-      </form>
-      <div id="rsvp-success" class="rsvp-success hidden">
-        <div class="success-icon">&#10003;</div>
-        <h3>Grazie!</h3>
-        <p>Your RSVP has been received. We can't wait to celebrate with you in Ravello!</p>
       </div>
+      <div class="frame-ornament-bottom"></div>
     </div>
   </section>
 
-  <!-- Registry Section -->
-  <section id="registry" class="section">
-    <div class="container">
-      <h2 class="section-title">Registry</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">Your presence in Ravello is the greatest gift we could ask for. But if you wish to honor us further, we've registered at the following places.</p>
-      <div class="registry-grid">
-        <a href="#" class="registry-card">
-          <div class="registry-icon">&#127873;</div>
-          <h3>Crate & Barrel</h3>
-          <p>Home essentials for our new life together</p>
-        </a>
-        <a href="#" class="registry-card">
-          <div class="registry-icon">&#9992;</div>
-          <h3>Honeymoon Fund</h3>
-          <p>Help us continue our Italian adventure</p>
-        </a>
-        <a href="#" class="registry-card">
-          <div class="registry-icon">&#127968;</div>
-          <h3>Williams Sonoma</h3>
-          <p>For our love of cooking & entertaining</p>
-        </a>
+  <!-- ==================== RSVP ==================== -->
+  <section id="rsvp" class="page-section">
+    <div class="ornate-frame">
+      <div class="frame-ornament-top"></div>
+      <div class="frame-border">
+        <div class="vine-border vine-left"></div>
+        <div class="vine-border vine-right"></div>
+        <div class="frame-content">
+
+          <h2 class="script-heading">R.S.V.P.</h2>
+          <p class="section-note">Kindly respond by July 1st, 2026</p>
+
+          <form id="rsvp-form" class="rsvp-form">
+            <div class="form-group">
+              <label for="guest-name">Full Name</label>
+              <input type="text" id="guest-name" name="name" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="guest-email">Email Address</label>
+              <input type="email" id="guest-email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="attendance">Will You Attend?</label>
+              <select id="attendance" name="attendance" required>
+                <option value="" disabled selected>Please select</option>
+                <option value="yes">Joyfully Accepts</option>
+                <option value="no">Regretfully Declines</option>
+              </select>
+            </div>
+            <div class="form-group" id="guest-count-group">
+              <label for="guest-count">Number of Guests</label>
+              <select id="guest-count" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group" id="dietary-group">
+              <label for="dietary">Dietary Restrictions</label>
+              <input type="text" id="dietary" name="dietary" placeholder="Any allergies or dietary needs">
+            </div>
+            <div class="form-group">
+              <label for="message">Message for the Couple</label>
+              <textarea id="message" name="message" rows="4" placeholder="Share your well wishes..."></textarea>
+            </div>
+            <button type="submit" class="btn-ornate btn-submit-full">Send R.S.V.P.</button>
+          </form>
+
+          <div id="rsvp-success" class="rsvp-success hidden">
+            <h3 class="script-heading">Grazie!</h3>
+            <p>Your R.S.V.P. has been received.<br>We can't wait to celebrate with you in Ravello!</p>
+          </div>
+
+        </div>
       </div>
+      <div class="frame-ornament-bottom"></div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <h2 class="footer-names">Polina & Eric</h2>
-      <p class="footer-date">August 8, 2026 &bull; Villa Cimbrone, Ravello, Italy</p>
-      <p class="footer-hashtag">#PolinaAndEricForever</p>
-      <p class="footer-note">Made with love</p>
+  <!-- ==================== FAQS ==================== -->
+  <section id="faqs" class="page-section">
+    <div class="ornate-frame">
+      <div class="frame-ornament-top"></div>
+      <div class="frame-border">
+        <div class="vine-border vine-left"></div>
+        <div class="vine-border vine-right"></div>
+        <div class="frame-content">
+
+          <h2 class="script-heading">FAQs</h2>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3 class="smallcaps-heading">What is the dress code?</h3>
+              <p>Black tie optional. The ceremony and reception take place outdoors on the villa's garden terraces, so we recommend elegant footwear suitable for stone paths and grass.</p>
+            </div>
+            <div class="ornamental-divider small"></div>
+            <div class="faq-item">
+              <h3 class="smallcaps-heading">Can I bring a plus one?</h3>
+              <p>Due to venue capacity, we are only able to accommodate guests who are listed on the invitation. If you have any questions, please reach out to us directly.</p>
+            </div>
+            <div class="ornamental-divider small"></div>
+            <div class="faq-item">
+              <h3 class="smallcaps-heading">Will transportation be provided?</h3>
+              <p>Yes, shuttle service will be arranged between select hotels in Ravello and Villa Cimbrone. Details will be shared closer to the date.</p>
+            </div>
+            <div class="ornamental-divider small"></div>
+            <div class="faq-item">
+              <h3 class="smallcaps-heading">What about the weather?</h3>
+              <p>August in Ravello is warm and sunny, with temperatures around 28–32°C (82–90°F). Evenings are comfortably warm. Rain is rare but possible — we'll have a backup plan just in case.</p>
+            </div>
+            <div class="ornamental-divider small"></div>
+            <div class="faq-item">
+              <h3 class="smallcaps-heading">Is there parking at the venue?</h3>
+              <p>Villa Cimbrone is accessible only on foot through Ravello's charming pedestrian streets. We recommend arriving via shuttle or taxi to Ravello's main piazza, from which it is a short walk through the gardens to the villa.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="frame-ornament-bottom"></div>
     </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-monogram">P<span>&amp;</span>E</div>
+    <p class="footer-date">August 8, 2026</p>
+    <p class="footer-venue">Villa Cimbrone, Ravello, Italy</p>
+    <p class="footer-hashtag">#PolinaAndEricForever</p>
   </footer>
 
   <script src="script.js"></script>
