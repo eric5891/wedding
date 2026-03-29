@@ -396,6 +396,28 @@ a { color: inherit; }
   margin-top: 24px;
 }
 
+.home-welcome {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 40px 44px;
+  background: rgba(250, 248, 244, 0.75);
+  text-align: center;
+}
+
+.home-welcome p {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--blue);
+  line-height: 2;
+  margin-bottom: 16px;
+}
+
+.home-welcome p:last-child {
+  margin-bottom: 0;
+}
+
 .home-page .site-footer {
   position: relative;
   z-index: 1;
