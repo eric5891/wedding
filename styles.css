@@ -397,17 +397,18 @@ a { color: inherit; }
 }
 
 .hero-welcome {
-  max-width: 540px;
-  margin-top: 36px;
+  max-width: 600px;
+  margin-top: 40px;
   text-align: center;
 }
 
 .hero-welcome p {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.25rem;
+  font-style: italic;
   color: var(--blue);
-  line-height: 2;
-  margin-bottom: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
 }
 
 .hero-welcome p:last-child {
