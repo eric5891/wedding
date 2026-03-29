@@ -332,11 +332,12 @@ a { color: inherit; }
   min-height: calc(100vh - 50px);
   margin-top: 50px;
   /* Subtle semi-transparent overlay for text readability */
-  background: radial-gradient(
-    ellipse at center 45%,
-    rgba(245, 238, 232, 0.6) 0%,
-    rgba(245, 238, 232, 0.35) 45%,
-    transparent 75%
+  background: linear-gradient(
+    180deg,
+    rgba(245, 238, 232, 0.45) 0%,
+    rgba(245, 238, 232, 0.55) 40%,
+    rgba(245, 238, 232, 0.65) 70%,
+    rgba(245, 238, 232, 0.75) 100%
   );
 }
 
