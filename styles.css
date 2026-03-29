@@ -332,12 +332,11 @@ a { color: inherit; }
   min-height: calc(100vh - 50px);
   margin-top: 50px;
   /* Subtle semi-transparent overlay for text readability */
-  background: linear-gradient(
-    180deg,
-    rgba(245, 238, 232, 0.45) 0%,
-    rgba(245, 238, 232, 0.55) 40%,
-    rgba(245, 238, 232, 0.65) 70%,
-    rgba(245, 238, 232, 0.75) 100%
+  background: radial-gradient(
+    ellipse at center 35%,
+    rgba(245, 238, 232, 0.55) 0%,
+    rgba(245, 238, 232, 0.3) 45%,
+    transparent 70%
   );
 }
 
@@ -398,9 +397,12 @@ a { color: inherit; }
 }
 
 .hero-welcome {
-  max-width: 600px;
+  max-width: 620px;
   margin-top: 40px;
+  padding: 32px 40px;
   text-align: center;
+  background: rgba(250, 248, 244, 0.82);
+  border-radius: 2px;
 }
 
 .hero-welcome p {
@@ -409,7 +411,7 @@ a { color: inherit; }
   font-style: italic;
   color: var(--blue);
   line-height: 1.9;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .hero-welcome p:last-child {
