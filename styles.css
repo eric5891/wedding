@@ -619,6 +619,17 @@ a { color: inherit; }
 }
 
 /* ============================================
+   AGENDA ILLUSTRATIONS
+   ============================================ */
+.agenda-image {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto 24px;
+}
+
+/* ============================================
    RSVP SUCCESS
    ============================================ */
 .rsvp-success {
