@@ -636,6 +636,13 @@ a { color: inherit; }
   color: var(--blue);
 }
 
+.footer-logo {
+  display: block;
+  height: 60px;
+  width: auto;
+  margin: 0 auto;
+}
+
 .footer-detail {
   font-family: var(--font-sans);
   font-size: 0.62rem;
