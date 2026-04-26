@@ -520,7 +520,7 @@ a { color: inherit; }
 }
 
 /* ============================================
-   REGISTRY, FAQ, TRAVEL ITEMS
+   REGISTRY, TRAVEL ITEMS
    ============================================ */
 .registry-item {
   display: block;
@@ -553,30 +553,6 @@ a { color: inherit; }
   font-size: 0.82rem;
   font-style: italic;
   color: var(--blue-light);
-}
-
-.faq-item {
-  text-align: center;
-  margin: 24px 0;
-}
-
-.faq-item h3 {
-  font-family: var(--font-serif-sc);
-  font-size: 0.88rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--blue-dark);
-  margin-bottom: 8px;
-}
-
-.faq-item p {
-  font-family: var(--font-serif);
-  font-size: 0.88rem;
-  color: var(--blue);
-  line-height: 1.95;
-  max-width: 480px;
-  margin: 0 auto;
 }
 
 .travel-block {
