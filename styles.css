@@ -376,6 +376,7 @@ a { color: inherit; }
 .hero-announce {
   font-family: var(--font-serif-sc);
   font-size: clamp(0.78rem, 1.4vw, 1.1rem);
+  font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--blue);
