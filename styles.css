@@ -82,7 +82,7 @@ a { color: inherit; }
 
 .nav-link {
   padding: 14px 20px;
-  font-family: trajan-pro, var(--font-sans);
+  font-family: trajan-pro-3, var(--font-sans);
   font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 2.5px;
