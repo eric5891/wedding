@@ -704,11 +704,16 @@ a { color: inherit; }
     padding: 36px 20px;
   }
 
+  .hero-overlay-text {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   .hero-venue-script {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .hero-name-script {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
