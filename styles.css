@@ -224,7 +224,7 @@ a { color: inherit; }
 }
 
 .italic-and {
-  font-family: var(--font-script);
+  font-family: medusa, var(--font-script);
   font-size: 1.6rem;
   color: var(--blue-light);
   line-height: 1;
