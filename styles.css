@@ -224,7 +224,8 @@ a { color: inherit; }
 }
 
 .italic-and {
-  font-family: var(--font-script);
+  font-family: bickham-script-pro-3, var(--font-script);
+  font-weight: 700;
   font-size: 1.6rem;
   color: var(--blue-light);
   line-height: 1;
@@ -379,7 +380,8 @@ a { color: inherit; }
 }
 
 .hero-name-script {
-  font-family: var(--font-script);
+  font-family: bickham-script-pro-3, var(--font-script);
+  font-weight: 700;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   color: var(--blue);
   line-height: 1.1;
