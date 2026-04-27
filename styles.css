@@ -241,6 +241,10 @@ a { color: inherit; }
   margin: 0 auto;
 }
 
+.our-story-page .body-text {
+  font-size: 1.05rem;
+}
+
 .detail-label {
   font-family: var(--font-sans);
   font-size: 0.68rem;
