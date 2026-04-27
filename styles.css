@@ -685,6 +685,12 @@ a { color: inherit; }
   .content-card {
     padding: 44px 28px;
   }
+
+  .hero-overlay-text {
+    justify-content: flex-start;
+    padding-top: 24px;
+    min-height: 0;
+  }
 }
 
 @media (max-width: 480px) {
