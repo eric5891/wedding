@@ -346,7 +346,7 @@ a { color: inherit; }
 
 .hero-date {
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -375,7 +375,7 @@ a { color: inherit; }
 
 .hero-announce {
   font-family: var(--font-serif-sc);
-  font-size: 1.1rem;
+  font-size: clamp(0.78rem, 1.4vw, 1.1rem);
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--blue);
@@ -392,7 +392,7 @@ a { color: inherit; }
 
 .hero-location {
   font-family: var(--font-sans);
-  font-size: 0.95rem;
+  font-size: clamp(0.68rem, 1.15vw, 0.95rem);
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
