@@ -691,6 +691,12 @@ a { color: inherit; }
     justify-content: flex-start;
     padding-top: 24px;
     min-height: 0;
+    background: none;
+  }
+
+  .home-page {
+    min-height: 100vh;
+    background-position: center 25%;
   }
 }
 
