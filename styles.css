@@ -247,7 +247,7 @@ a { color: inherit; }
 
 .detail-label {
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -258,13 +258,13 @@ a { color: inherit; }
 
 .detail-value {
   font-family: var(--font-serif);
-  font-size: 0.92rem;
+  font-size: 1.1rem;
   color: var(--blue);
 }
 
 .italic-note {
   font-family: var(--font-serif);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   font-style: italic;
   color: var(--blue-light);
   line-height: 1.9;
