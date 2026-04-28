@@ -256,6 +256,16 @@ a { color: inherit; }
   margin-bottom: 2px;
 }
 
+.event-date {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--blue);
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
 .detail-value {
   font-family: var(--font-serif);
   font-size: 1.1rem;
