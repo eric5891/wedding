@@ -257,11 +257,11 @@ a { color: inherit; }
 }
 
 .event-date {
-  font-family: var(--font-serif-sc);
+  font-family: var(--font-sans);
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--blue-dark);
   margin-top: 8px;
