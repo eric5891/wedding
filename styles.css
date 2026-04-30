@@ -194,8 +194,12 @@ a { color: inherit; }
   margin-bottom: 12px;
 }
 
-.script-heading {
+h2.script-heading {
   font-family: medusa, var(--font-script);
+}
+
+.script-heading {
+  font-family: var(--font-script);
   font-weight: 400;
   font-size: clamp(2.5rem, 5vw, 3.8rem);
   color: var(--blue);
