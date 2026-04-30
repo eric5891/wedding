@@ -195,7 +195,7 @@ a { color: inherit; }
 }
 
 .script-heading {
-  font-family: var(--font-script);
+  font-family: medusa, var(--font-script);
   font-weight: 400;
   font-size: clamp(2.5rem, 5vw, 3.8rem);
   color: var(--blue);
