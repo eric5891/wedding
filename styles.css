@@ -427,6 +427,7 @@ h2.script-heading {
 .hero-welcome p {
   font-family: var(--font-serif);
   font-size: 1.25rem;
+  font-weight: 700;
   color: var(--blue);
   line-height: 1.9;
   margin-bottom: 16px;
