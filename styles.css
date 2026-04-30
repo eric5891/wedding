@@ -410,7 +410,7 @@ a { color: inherit; }
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--blue-light);
-  margin-top: 24px;
+  margin-top: 4px;
 }
 
 .hero-welcome {
