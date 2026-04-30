@@ -358,7 +358,7 @@ a { color: inherit; }
 
 .hero-date {
   font-family: var(--font-serif-sc);
-  font-size: clamp(0.91rem, 1.56vw, 1.3rem);
+  font-size: clamp(1.09rem, 1.87vw, 1.56rem);
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
