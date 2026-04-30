@@ -261,7 +261,7 @@ h2.script-heading {
 }
 
 .event-date {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif-sc);
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
