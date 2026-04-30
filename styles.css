@@ -736,4 +736,8 @@ h2.script-heading {
   .hero-location {
     margin-top: 5px;
   }
+
+  .hero-welcome p {
+    font-size: 1rem;
+  }
 }
