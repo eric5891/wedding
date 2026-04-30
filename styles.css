@@ -404,7 +404,7 @@ a { color: inherit; }
 }
 
 .hero-location {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif-sc);
   font-size: clamp(0.68rem, 1.15vw, 0.95rem);
   font-weight: 700;
   letter-spacing: 3px;
