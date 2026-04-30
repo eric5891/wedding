@@ -363,7 +363,7 @@ a { color: inherit; }
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--blue);
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .hero-venue-script {
