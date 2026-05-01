@@ -329,7 +329,7 @@ h2.script-heading {
 
 .divider-simple {
   width: 100px;
-  height: 1px;
+  height: 2px;
   background: linear-gradient(90deg, transparent, var(--blue-pale), transparent);
   margin: 24px auto;
 }
