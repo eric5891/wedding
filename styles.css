@@ -288,6 +288,10 @@ h2.script-heading {
   margin: 0 auto;
 }
 
+.agenda-page .italic-note {
+  font-style: normal;
+}
+
 /* ============================================
    DIVIDERS — Delicate botanical
    ============================================ */
