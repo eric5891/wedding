@@ -245,7 +245,8 @@ h2.script-heading {
   margin: 0 auto;
 }
 
-.our-story-page .body-text {
+.our-story-page .body-text,
+.dress-code-page .body-text {
   font-size: 1.05rem;
 }
 
