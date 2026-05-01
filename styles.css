@@ -246,7 +246,9 @@ h2.script-heading {
 }
 
 .our-story-page .body-text,
-.dress-code-page .body-text {
+.dress-code-page .body-text,
+.travel-page .body-text,
+.registry-page .body-text {
   font-size: 1.05rem;
 }
 
