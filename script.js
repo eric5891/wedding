@@ -40,41 +40,37 @@
     observer.observe(el);
   });
 
-  // ---- RSVP Form ----
-  var form = document.getElementById('rsvp-form');
-  var attendance = document.getElementById('attendance');
-  var guestCountGroup = document.getElementById('guest-count-group');
-  var dietaryGroup = document.getElementById('dietary-group');
+  // ---- Menu Form (Formspree) ----
+  var menuForm = document.getElementById('menu-form');
 
-  if (attendance) {
-    attendance.addEventListener('change', function () {
-      if (this.value === 'no') {
-        if (guestCountGroup) guestCountGroup.classList.add('hidden');
-        if (dietaryGroup) dietaryGroup.classList.add('hidden');
-      } else {
-        if (guestCountGroup) guestCountGroup.classList.remove('hidden');
-        if (dietaryGroup) dietaryGroup.classList.remove('hidden');
-      }
-    });
-  }
-
-  if (form) {
-    form.addEventListener('submit', function (e) {
+  if (menuForm) {
+    menuForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      var formData = new FormData(form);
-      var data = {};
-      formData.forEach(function (value, key) {
-        data[key] = value;
-      });
+      var errorNote = document.getElementById('menu-form-error');
+      var submitBtn = menuForm.querySelector('button[type="submit"]');
+      errorNote.classList.add('hidden');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
 
-      // Store in localStorage (connect to a backend service for production)
-      var rsvps = JSON.parse(localStorage.getItem('wedding_rsvps') || '[]');
-      rsvps.push(data);
-      localStorage.setItem('wedding_rsvps', JSON.stringify(rsvps));
-
-      form.classList.add('hidden');
-      document.getElementById('rsvp-success').classList.remove('hidden');
+      fetch(menuForm.action, {
+        method: 'POST',
+        body: new FormData(menuForm),
+        headers: { 'Accept': 'application/json' }
+      })
+        .then(function (response) {
+          if (response.ok) {
+            menuForm.classList.add('hidden');
+            document.getElementById('menu-success').classList.remove('hidden');
+          } else {
+            throw new Error('Submission failed');
+          }
+        })
+        .catch(function () {
+          errorNote.classList.remove('hidden');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit Selection';
+        });
     });
   }
 })();

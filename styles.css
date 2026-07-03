@@ -541,6 +541,60 @@ h2.script-heading {
 }
 
 /* ============================================
+   MENU CHOICE CARDS
+   ============================================ */
+.choice-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.choice-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.choice-card {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--blue-pale);
+  background: var(--cream);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.choice-option:hover .choice-card {
+  border-color: var(--blue-light);
+}
+
+.choice-option input[type="radio"]:checked + .choice-card {
+  border-color: var(--blue);
+  background: var(--white);
+  box-shadow: inset 0 0 0 1px var(--blue);
+}
+
+.choice-title {
+  display: block;
+  font-family: var(--font-serif-sc);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+}
+
+.choice-desc {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--blue-light);
+  margin-top: 4px;
+}
+
+/* ============================================
    REGISTRY, TRAVEL ITEMS
    ============================================ */
 .registry-item {
