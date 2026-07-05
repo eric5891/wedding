@@ -28,47 +28,94 @@
 
         <h2 class="script-heading">Menu</h2>
 
-        <p class="section-note">Please share your dinner selection for the wedding celebration.<br>Kindly submit one response per guest.</p>
+        <p class="body-text">Please share your dinner selections for the wedding celebration.<br>Kindly select one dish per course, and submit one response per guest.</p>
 
-        <form id="menu-form" class="rsvp-form" action="https://formspree.io/f/mnjklzdq" method="POST">
+        <form id="menu-form" class="rsvp-form" action="https://formspree.io/f/mnjklzdq" method="POST" style="margin-top: 30px;">
           <div class="form-group">
             <label for="guest-name">Guest Full Name</label>
             <input type="text" id="guest-name" name="name" required placeholder="Your full name">
           </div>
 
-          <div class="form-group">
-            <label>Entrée Selection</label>
+          <div class="form-group" style="margin-top: 28px;">
+            <label>Starter</label>
             <div class="choice-group">
               <label class="choice-option">
-                <input type="radio" name="entree" value="Meat" required>
+                <input type="radio" name="Starter" value="Polpetta di Manzo" required>
                 <span class="choice-card">
-                  <span class="choice-title">Meat</span>
-                  <span class="choice-desc">Tenderloin of beef, seasonal vegetables</span>
+                  <span class="choice-title">Polpetta di Manzo</span>
+                  <span class="choice-desc">Tender beef meatball over a silky tomato coulis, finished with Provola cheese fondue and fresh basil</span>
                 </span>
               </label>
               <label class="choice-option">
-                <input type="radio" name="entree" value="Fish" required>
+                <input type="radio" name="Starter" value="Gazpacho Vesuviano" required>
                 <span class="choice-card">
-                  <span class="choice-title">Fish</span>
-                  <span class="choice-desc">Fresh Mediterranean catch, lemon &amp; herbs</span>
+                  <span class="choice-title">Gazpacho Vesuviano</span>
+                  <span class="choice-desc">Chilled gazpacho of Vesuvian yellow cherry tomatoes with shrimp, crisp celery, and an olive salad</span>
                 </span>
               </label>
               <label class="choice-option">
-                <input type="radio" name="entree" value="Vegetarian" required>
+                <input type="radio" name="Starter" value="Millefoglie di Verdure" required>
                 <span class="choice-card">
-                  <span class="choice-title">Vegetarian</span>
-                  <span class="choice-desc">Seasonal garden creation from the chef</span>
+                  <span class="choice-title">Millefoglie di Verdure</span>
+                  <span class="choice-desc">Delicate layers of garden vegetables atop a golden tomato gazpacho</span>
                 </span>
               </label>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group" style="margin-top: 28px;">
+            <label>First Course</label>
+            <div class="choice-group">
+              <label class="choice-option">
+                <input type="radio" name="First Course" value="Cannelloni alla Genovese" required>
+                <span class="choice-card">
+                  <span class="choice-title">Cannelloni alla Genovese</span>
+                  <span class="choice-desc">Handmade cannelloni filled with slow-braised Genovese ragù, dressed in cacio e pepe</span>
+                </span>
+              </label>
+              <label class="choice-option">
+                <input type="radio" name="First Course" value="Cannelloni di Ricotta" required>
+                <span class="choice-card">
+                  <span class="choice-title">Cannelloni di Ricotta</span>
+                  <span class="choice-desc">A vegetarian rendition of our cannelloni, with a delicate ricotta filling in place of the ragù</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 28px;">
+            <label>Main Course</label>
+            <div class="choice-group">
+              <label class="choice-option">
+                <input type="radio" name="Main Course" value="Branzino in Crosta d'Erbe" required>
+                <span class="choice-card">
+                  <span class="choice-title">Branzino in Crosta d'Erbe</span>
+                  <span class="choice-desc">Sea bass fillet baked in a fragrant herb crust, with seasonal salad and lemon mayonnaise</span>
+                </span>
+              </label>
+              <label class="choice-option">
+                <input type="radio" name="Main Course" value="Filetto di Manzo" required>
+                <span class="choice-card">
+                  <span class="choice-title">Filetto di Manzo</span>
+                  <span class="choice-desc">Beef tenderloin with tarragon jus and a caponata of seasonal vegetables</span>
+                </span>
+              </label>
+              <label class="choice-option">
+                <input type="radio" name="Main Course" value="Melanzana al Forno" required>
+                <span class="choice-card">
+                  <span class="choice-title">Melanzana al Forno</span>
+                  <span class="choice-desc">Baked eggplant crowned with an airy mozzarella foam</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 28px;">
             <label for="dietary">Dietary Restrictions or Allergies</label>
             <input type="text" id="dietary" name="dietary" placeholder="Any allergies or dietary needs">
           </div>
 
-          <button type="submit" class="btn btn-full">Submit Selection</button>
+          <button type="submit" class="btn btn-full">Submit Selections</button>
           <p id="menu-form-error" class="italic-note hidden" style="margin-top: 14px; color: #a05a5a;">Something went wrong — please try again in a moment.</p>
         </form>
 

@@ -69,7 +69,7 @@
         .catch(function () {
           errorNote.classList.remove('hidden');
           submitBtn.disabled = false;
-          submitBtn.textContent = 'Submit Selection';
+          submitBtn.textContent = 'Submit Selections';
         });
     });
   }
