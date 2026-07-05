@@ -501,7 +501,7 @@ h2.script-heading {
   margin-bottom: 20px;
 }
 
-.form-group label {
+.form-group > label {
   display: block;
   font-family: var(--font-sans);
   font-size: 0.65rem;
